@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/italian/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>italians</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Hero-Technology.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+     <script src="./app/data/Soddisfazione.js"></script>
+    <!-- Polyfills -->
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+     <script src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js"></script>
+     <script src="./systemjs.config.server.js"></script>
+         <script>
+      System.import('main.js')
+            .catch(function(err){ console.error(err); });
+    </script>
+<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href=".jumbotron">Q?</a></li>
+                        <li role="presentation"><a href="#chart2">MeanAges</a></li>
+                        <li role="presentation"><a href="#chart1">R8%</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <video class="hidden-xs" autoplay="" preload="" muted="" loop="">
+            <source src="./assets/video/video.webm" type="video/mp4">
+        </video>
+    <div class="jumbotron hero-technology">
+        <h3 class="hero-title">How satisfied are <i>ITALIANS</i> about their lives? </h3>
+        <a href="#chart2"><img src="./assets/img/pizza.png" style="height: 100px;"></a>
+    </div>
+    <app-root>
+    </app-root>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
+
+    </script>
+    <script>window.module = 'aot';</script>
+<script type="text/javascript" src="inline.fff3b4837de49fb88b73.bundle.js"></script><script type="text/javascript" src="vendor.d35242cc0202bbf1dbac.bundle.js"></script><script type="text/javascript" src="main.93a7c3123dcb14cf3e15.bundle.js"></script></body>
+
+</html>

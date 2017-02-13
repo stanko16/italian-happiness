@@ -1,0 +1,25 @@
+
+    <div style="display: block; ">
+    <canvas baseChart 
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [colors]="barChartColors"
+            [chartType]="barChartType"></canvas>
+    </div>
+
+    <div style="display: block;">
+      <div *ngFor='let gender of genders' class="options">
+       <input type="radio" name="gender_1" value="{{gender}}" class="opt"  [(ngModel)]="curr_gender" (change)="toggleGender(gender)"> {{gender}}<br>
+      </div><br>
+      <select (change)="toggleAge($event.target.value)" [(ngModel)]="curr_age" class="options opt">
+      <option value="" disabled=""> Age </option>
+          <option  *ngFor='let age of ages' value="{{age}}"  >{{age}}</option>
+      </select> <br>
+      <div *ngFor='let year of years' class="options">
+       <input class="opt" type="checkbox" name="year_selection" value="{{year}}" checked (change)="toggleYear(year)"> {{year}}
+       <br>
+
+      </div>
+    </div>

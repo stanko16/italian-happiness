@@ -1,0 +1,24 @@
+div.jumbotron.hero-technology {
+  color:#fff;
+  text-align:center;
+  background-color:rgba(30,30,30,.8);
+  background-size:cover;
+  background-position:center;
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+  text-shadow:0 2px 2px rgba(0,0,0,0.3);
+  color:#fff;
+  font-weight:500;
+}
+
+p.hero-subtitle {
+  max-width:600px;
+  margin:25px auto;
+  padding:10px 15px;
+  color:#333;
+  font-weight:500;
+}
+
